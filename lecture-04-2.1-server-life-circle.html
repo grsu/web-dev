@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Раздел 2. Тема 1.</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="bower_components/reveal.js/css/reveal.min.css">
+		<link rel="stylesheet" href="bower_components/reveal.js/css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="bower_components/reveal.js/lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="bower_components/reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="bower_components/reveal.js/lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Жизненный цикл и модель серверной части веб-приложения</h1>
+					<p>
+						<small>читает Павел Зубков / <a href="http://twitter.com/irnc">@irnc</a></small>
+					</p>
+				</section>
+
+        <section>
+          <section>
+            <h3>Жизненный цикл</h3>
+            <p>
+              Закономерная последовательность изменений ресурсов предоставляемых данным веб-сервером.
+            </p>
+          </section>
+
+          <section>
+            <h3>Смысл веб-сервера</h3>
+
+            <p>
+              Обеспечить предоставление ресурсов и возможность изменения их состояния.
+            </p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>Основные принципы обработки запросов и генерации ответов</h3>
+
+            <ul>
+              <li>
+                HTTP метод это операция которую необходимо выполнить над ресурсом
+
+                <ul class="fragment">
+                  <li>GET /article/123</li>
+                  <li>DELETE /article/456</li>
+                </ul>
+              </li>
+              <li>
+                смысл операции связанный с символьным именем метода определяется по соглашению между клиентом и
+                сервером,
+                <a href="https://tools.ietf.org/html/rfc2616#section-9">базовые операции определены протоколом HTTP</a>
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <ul>
+              <li>
+                набор реализованных методов зависит от сервера
+              </li>
+              <li class="fragment">
+                после выполнения операции сервер возвращает
+                <a href="https://tools.ietf.org/html/rfc2616#section-10"><i>код состояния</i> (status code)</a>
+                <ul>
+                  <li>200 OK</li>
+                  <li>405 Method Not Allowed</li>
+                  <li>
+                    сервер не поддерживает метод необходимый для выполнения запроса,
+                    <a href="https://tools.ietf.org/html/rfc2616#section-10.5.2">501 Not Implemented</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <h3>Обработка HTTP методов</h3>
+
+          <ul>
+            <li>
+              <a href="https://tools.ietf.org/html/rfc2616#section-9.1.1">безопасные методы (en. Safe Methods)</a>
+
+              <ul>
+                <li>например: GET, HEAD</li>
+                <li>принцип: "безопасным" методом пользователь не запрашивает операцию имеющую побочные эффекты</li>
+              </ul>
+            </li>
+            <li>
+              <a href="https://tools.ietf.org/html/rfc2616#section-9.1.2">идемпотентные методы (en. Idempotent Methods)</a>
+
+              <ul>
+                <li>например: безопасные методы, PUT, DELETE</li>
+                <li>
+                  принцип: побочные эффекты от выполнения идентичного запроса N > 0 раз такие же, как и от выполнения
+                  одного такого запроса
+
+                  <ul>
+                    <li>DELETE над /article/latest должен быть запрещён (свойство идемпотентности метода не выполняется)</li>
+                    <li>верно будет DELETE /article/12</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <section>
+            <h3>Валидация данных</h3>
+
+            <ul>
+              <li>процесс проверки данных на соответсвие предопределённым правилам</li>
+              <li class="fragment">
+                к данным передаваемым в запросе нельзя относится с доверием, так как клиент может отправить любое
+                значение
+
+                <ul>
+                  <li class="fragment">
+                    если мы ожидаем email, нужно проверить что его формат верный
+                  </li>
+                  <li class="fragment">если мы ожидаем строку, нужно проверить что её длинна в допустимых рамках</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Валидация данных: предметная область</h3>
+
+            <ul>
+              <li>
+                данные верные по формату могут быть противоречивы в рамках объекта предметной области
+              </li>
+              <li>
+                правила непротиворечивости определяются <i>бизнес логикой</i> объекта и приложения в целом
+
+                <ul class="fragment">
+                  <li>при создании ресурса Пользователь, его свойство email должно быть уникальным среди всех пользователей</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <h3>Обработка ошибок</h3>
+
+          <ul>
+            <li>обработка исключительных ситуаций</li>
+            <li>отправка ответа с соответствующим <i>кодом состояния</i></li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Маршрутизация запросов</h3>
+
+          <ul>
+            <li>общие принципы MVC</li>
+            <li>понятие роутера</li>
+            <li>передача запроса от роутера к контроллеру для его исполнения</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Генерация контента и понятие шаблонизатора</h3>
+
+          <ul>
+            <li>
+              шаблонизатор это компонент ответственный за создание определённого типа представления ресурса
+
+              <ul>
+                <li>из шаблона представления (en. view template) и данных</li>
+              </ul>
+            </li>
+            <li class="fragment">
+              основная задача: вынести ответственность за представление данных из логики обработки данных
+
+              <ul>
+                <li>
+                  представлений может быть множество, в то время как структура данных представлена единообразно
+
+                  <ul>
+                    <li>данные: массив имён студентов</li>
+                    <li>типы представления: HTML, XML, JSON</li>
+                  </ul>
+                </li>
+                <li>позволить изменять представление без изменения кода обработки данных</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Конспекты</h3>
+
+          <ul>
+            <li><a href="http://milko.by/6-%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81/">2013 год | Алексей Милько</a>, выпуск 2014 года</li>
+            <li>... ищите, кто-то их ведёт</li>
+            <li class="fragment">
+              Читайте <b>RFC 2616</b> - нормативное опреденение HTTP протокола, в конспекте и популярных статьях есть неточности.
+
+              <ul>
+                <li><a href="https://tools.ietf.org/html/rfc2616">https://tools.ietf.org/html/rfc2616</a></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+				<section>
+					<h1>ВОПРОСЫ</h1>
+					<h3>и ответы</h3>
+
+          <p>
+            принимаются на странице курса
+            <a href="https://github.com/grsu/web-dev/issues">https://github.com/grsu/web-dev/issues</a>
+          </p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="bower_components/reveal.js/lib/js/head.min.js"></script>
+		<script src="bower_components/reveal.js/js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'bower_components/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'bower_components/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'bower_components/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'bower_components/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'bower_components/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'bower_components/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

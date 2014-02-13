@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Зачем всё это нужно</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="bower_components/reveal.js/css/reveal.min.css">
+		<link rel="stylesheet" href="bower_components/reveal.js/css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="bower_components/reveal.js/lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="bower_components/reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="bower_components/reveal.js/lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Базовая архитектура веб-приложения</h1>
+					<h3>Раздел 1. Тема 2</h3>
+					<p>
+						<small>читает Павел Зубков / <a href="http://twitter.com/irnc">@irnc</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Краткие сведения о HTML и CSS</h2>
+
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li></li>
+          </ul>
+				</section>
+
+        <section>
+          <h2>Понятие запроса и ответа</h2>
+
+          <ul>
+            <li>первоначальный запрос приложения с сервера</li>
+            <li>
+              представления приложения пользователю
+
+              <ul>
+                <li>разбор HTML</li>
+                <li>загрузка внешних ресурсов: стилей, скриптов и изображений</li>
+                <li></li>
+              </ul>
+            </li>
+            <li>взаимодействие создаёт последующие запросы</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Пример простейшего веб-приложения</h2>
+        </section>
+
+        <section>
+          <h2>Обработка HTML форм и общие понятия взаимодействия с пользователем</h2>
+        </section>
+
+        <section>
+          <h2>Отсутсвие состояния у веб-приложения</h2>
+        </section>
+
+        <section>
+          <h2>Понятие cookie и сессии. Общие сведения о генерации контента</h2>
+        </section>
+
+				<section>
+					<h1>ВОПРОСЫ</h1>
+					<h3>и ответы</h3>
+
+          <p>
+            принимаются на странице курса
+            <a href="https://github.com/grsu/web-dev/issues">https://github.com/grsu/web-dev/issues</a>
+          </p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="bower_components/reveal.js/lib/js/head.min.js"></script>
+		<script src="bower_components/reveal.js/js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'bower_components/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'bower_components/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'bower_components/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'bower_components/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'bower_components/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'bower_components/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
