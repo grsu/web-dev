@@ -27,7 +27,10 @@
 1. [Configuring the Viewport][] section in Safari Web Content Guide.
 2. [Using the viewport meta tag to control layout on mobile browsers][] at MDN.
 3. [Configure the Viewport][] in the PageSpeed Insights at Google Developers.
+4. [Что такое Viewport, как он работает и для чего вообще нужен][viewport-frontender] на frontender.com.ua.
+5. [Device Adaptation](https://msdn.microsoft.com/en-us/library/ie/hh869463(v=vs.85).aspx) section at MSDN.
 
 [Configuring the Viewport]: https://developer.apple.com/library/ios/documentation/AppleApplications/Reference/SafariWebContent/UsingtheViewport/UsingtheViewport.html
 [Using the viewport meta tag to control layout on mobile browsers]: https://developer.mozilla.org/en/docs/Mozilla/Mobile/Viewport_meta_tag 
 [Configure the Viewport]: https://developers.google.com/speed/docs/insights/ConfigureViewport
+[viewport-frontender]: http://frontender.com.ua/mobile-web/wtf-viewport/
