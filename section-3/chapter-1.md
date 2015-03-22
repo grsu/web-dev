@@ -39,3 +39,7 @@
 [Using the viewport meta tag to control layout on mobile browsers]: https://developer.mozilla.org/en/docs/Mozilla/Mobile/Viewport_meta_tag 
 [Configure the Viewport]: https://developers.google.com/speed/docs/insights/ConfigureViewport
 [viewport-frontender]: http://frontender.com.ua/mobile-web/wtf-viewport/
+
+## Инструментарий
+
+1. [http://htmlpreview.github.io/](https://github.com/htmlpreview/htmlpreview.github.com)
