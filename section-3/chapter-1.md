@@ -13,7 +13,7 @@
 
 ## Использование HTML, CSS и JavaScript для разработки клиентской части веб-приложения
 
-Пусто.
+Начать введение со среды, в которой работает клиентская часть. Объяснить суть подхода Mobile First.
 
 ## Общие сведения о вёрстке HTML
 
@@ -21,6 +21,11 @@
 о viewport.
 
 ## Ресурсы для самостоятельного изучения
+
+### Mobile First
+
+1. [Mobile - Table of contents](http://www.quirksmode.org/mobile/) by Peter-Paul Koch
+2. [Mobile First book](http://www.lukew.com/resources/mobile_first.asp) by Luke Wroblewski (October 2011)
 
 ### Viewport
 
