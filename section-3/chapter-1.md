@@ -29,7 +29,7 @@
 
 ### Viewport
 
-1. [Configuring the Viewport][] section in Safari Web Content Guide.
+1. [Configuring the Viewport][] section in Safari Web Content Guide (привет из июня 2005).
 2. [Using the viewport meta tag to control layout on mobile browsers][] at MDN.
 3. [Configure the Viewport][] in the PageSpeed Insights at Google Developers.
 4. [Что такое Viewport, как он работает и для чего вообще нужен][viewport-frontender] на frontender.com.ua.
