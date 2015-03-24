@@ -15,6 +15,8 @@
 
 Начать введение со среды, в которой работает клиентская часть. Объяснить суть подхода Mobile First.
 
+<blockquote class="twitter-tweet" lang="en"><p>I tried to make an &quot;end credits&quot; slide w/ IE-only APIs not in Project Spartan that scrolls while I talk. The list was so long it crashed PPT</p>&mdash; Jacob Rossi (@jacobrossi) <a href="https://twitter.com/jacobrossi/status/580253880690208768">March 24, 2015</a></blockquote>
+
 ## Общие сведения о вёрстке HTML
 
 Рассмотреть различные подходы к вёрстке в исторической перспективе. Рассказать
