@@ -22,3 +22,11 @@ MVC архитектуры для разработки клиентских пр
 ## [Тема 4.](chapter-4.md) Разработка RIA.
 
 Понятие RIA. Интерактивный обмен данными. Понятие AJAX.
+
+---
+
+## Ресурсы
+
+1. [A Baseline for Front-End [JS] Developers: 2015][baseline-for-frontend-devs] by Rebecca Murphey
+
+[baseline-for-frontend-devs]: http://rmurphey.com/blog/2015/03/23/a-baseline-for-front-end-developers-2015/
