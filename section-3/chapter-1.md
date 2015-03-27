@@ -17,6 +17,8 @@
 
 <blockquote class="twitter-tweet" lang="en"><p>I tried to make an &quot;end credits&quot; slide w/ IE-only APIs not in Project Spartan that scrolls while I talk. The list was so long it crashed PPT</p>&mdash; Jacob Rossi (@jacobrossi) <a href="https://twitter.com/jacobrossi/status/580253880690208768">March 24, 2015</a></blockquote>
 
+<blockquote class="twitter-tweet" lang="en"><p>Slides of my <a href="https://twitter.com/hashtag/mobilism?src=hash">#mobilism</a> presentation are online at <a href="http://t.co/5NfIO4bwrF">http://t.co/5NfIO4bwrF</a></p>&mdash; Peter-Paul Koch (@ppk) <a href="https://twitter.com/ppk/status/581400550417285120">March 27, 2015</a></blockquote>
+
 ## Общие сведения о вёрстке HTML
 
 Рассмотреть различные подходы к вёрстке в исторической перспективе. Рассказать
@@ -40,7 +42,7 @@
 
 [Surveying the viewport]: http://www.epinova.no/blog/george-gooding/dates/2014/10/surveying-the-viewport/
 [Configuring the Viewport]: https://developer.apple.com/library/ios/documentation/AppleApplications/Reference/SafariWebContent/UsingtheViewport/UsingtheViewport.html
-[Using the viewport meta tag to control layout on mobile browsers]: https://developer.mozilla.org/en/docs/Mozilla/Mobile/Viewport_meta_tag 
+[Using the viewport meta tag to control layout on mobile browsers]: https://developer.mozilla.org/en/docs/Mozilla/Mobile/Viewport_meta_tag
 [Configure the Viewport]: https://developers.google.com/speed/docs/insights/ConfigureViewport
 [viewport-frontender]: http://frontender.com.ua/mobile-web/wtf-viewport/
 
