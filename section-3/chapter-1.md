@@ -66,6 +66,10 @@ _Document Object Model_.
 
 DOM и CSSOM - два интерфейса позволяющих JS коду реализовывать интерактивное поведение.
 
+## Ненавязчивый JavaScript.
+
+См. [Ненавязчивый JavaScript](https://ru.wikipedia.org/wiki/%D0%9D%D0%B5%D0%BD%D0%B0%D0%B2%D1%8F%D0%B7%D1%87%D0%B8%D0%B2%D1%8B%D0%B9_JavaScript).
+
 ---
 
 ## Ресурсы для самостоятельного изучения
@@ -74,7 +78,6 @@ DOM и CSSOM - два интерфейса позволяющих JS коду р
 
 * [Использование HTML, CSS и JavaScript для разработки клиентской части веб-приложения. Общие сведения о вёрстке HTML. CSS-фрэймворки](http://web.archive.org/web/20130613204421/http://milko.by/10-%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81)
 * [DOM. JavaScript-фрэймворки и библиотеки. Валидация данных. Интерактивное взаимодействие с пользователем. Обработка ошибок](http://web.archive.org/web/20130613233109/http://milko.by/11-%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81)
-* [Ненавязчивый JavaScript](http://web.archive.org/web/20130609231134/http://milko.by/12-%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81)
 
 ### Mobile First
 
