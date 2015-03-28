@@ -70,6 +70,12 @@ DOM и CSSOM - два интерфейса позволяющих JS коду р
 
 См. [Ненавязчивый JavaScript](https://ru.wikipedia.org/wiki/%D0%9D%D0%B5%D0%BD%D0%B0%D0%B2%D1%8F%D0%B7%D1%87%D0%B8%D0%B2%D1%8B%D0%B9_JavaScript).
 
+### Генезис подхода
+
+* когда-то был в ходу термин Dynamic HTML (DHTML)
+* [Labels.js: A Re-Introduction to DHTML](http://web.archive.org/web/20020602111256/http://www.youngpup.net/?request=/articles/labels.xml) by [Aaron Boodman](http://www.aaronboodman.com/) at December 23, 2001
+* [Unobtrusive DHTML, and the power of unordered lists](http://web.archive.org/web/20021204224748/http://www.kryogenix.org/code/browser/aqlists/) by Stuart Langridge at November 2002
+
 ---
 
 ## Ресурсы для самостоятельного изучения
