@@ -13,11 +13,22 @@
 
 ## Использование HTML, CSS и JavaScript для разработки клиентской части веб-приложения
 
+HTML разметкой задаётся структура макета. С помощью CSS определяется представление и художественное оформление. JavaScript позволяет на основе декларативной структуры и стилей выстроить интерактивное поведение.
+
 Начать введение со среды, в которой работает клиентская часть. Объяснить суть подхода Mobile First.
 
 <blockquote class="twitter-tweet" lang="en"><p>I tried to make an &quot;end credits&quot; slide w/ IE-only APIs not in Project Spartan that scrolls while I talk. The list was so long it crashed PPT</p>&mdash; Jacob Rossi (@jacobrossi) <a href="https://twitter.com/jacobrossi/status/580253880690208768">March 24, 2015</a></blockquote>
 
 <blockquote class="twitter-tweet" lang="en"><p>Slides of my <a href="https://twitter.com/hashtag/mobilism?src=hash">#mobilism</a> presentation are online at <a href="http://t.co/5NfIO4bwrF">http://t.co/5NfIO4bwrF</a></p>&mdash; Peter-Paul Koch (@ppk) <a href="https://twitter.com/ppk/status/581400550417285120">March 27, 2015</a></blockquote>
+
+### Размещение кода на HTML-странице
+
+* `javascript:` schema в URL, например `<a href="javascript:expr">`
+* обработчик события (handler);
+* подстановка (entity) (в Microsoft Internet Explorer реализована в версиях от 5.X и выше);
+* вставка (контейнер SCRIPT).
+ 
+Разобрать http://www.javascript-spravka.ru/part/0/ как пример широко растиражированного документа, указать ссылки на первоисточники разработки каждого способа.
 
 ## Общие сведения о вёрстке HTML
 
