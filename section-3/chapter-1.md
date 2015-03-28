@@ -3,9 +3,9 @@
 *   Использование HTML, CSS и JavaScript для разработки клиентской части
     веб-приложения.
 *   Общие сведения о вёрстке HTML.
-*   CSS-фрэймворки.
+*   CSS-фреймворки.
 *   DOM.
-*   JavaScript-фрэймворки и библиотеки.
+*   JavaScript-фреймворки и библиотеки.
 *   Валидация данных.
 *   Интерактивное взаимодействие с пользователем.
 *   Обработка ошибок.
@@ -36,6 +36,14 @@
 Для самостоятельно изучения прочитать http://learnlayout.com/.
 
 Рассказать о viewport.
+
+## CSS-фреймворки
+
+<blockquote><p>CSS-фреймворки задумывались для того, чтобы помочь выполнить сложную CSS разметку проще. Использование фреймворков будет хорошей идеей лишь только в том случае, если фреймворки действительно делают то, что необходимо для вашего сайта. Они никогда не заменят необходимых знаний того, каким образом работает CSS.</p>&mdash; http://learnlayout.com/frameworks.html</blockquote>
+
+<blockquote><p>CSS-фреймворк — фреймворк, созданный для упрощения работы верстальщика, быстроты разработки и исключения максимально возможного числа ошибок вёрстки (проблемы совместимости различных версий браузеров и т. д.).</p>&mdash; <a href="https://ru.wikipedia.org/wiki/CSS-%D1%84%D1%80%D0%B5%D0%B9%D0%BC%D0%B2%D0%BE%D1%80%D0%BA">CSS-фреймворк</a></blockquote>
+
+---
 
 ## Ресурсы для самостоятельного изучения
 
@@ -68,3 +76,20 @@
 ## Инструментарий
 
 1. [http://htmlpreview.github.io/](https://github.com/htmlpreview/htmlpreview.github.com)
+
+---
+
+## Термины
+
+*   layout
+*   page layout
+   
+    <blockquote><p>Page layout is the part of graphic design that deals in the arrangement of visual elements on a page. It generally involves organizational principles of composition to achieve specific communication objectives.</p>&mdash; см. https://en.wikipedia.org/wiki/Page_layout</blockquote>
+
+*   Web layout
+   
+    См. http://www.smashingmagazine.com/2013/08/29/innovative-appraoches-web-layout/
+
+*   CSS layout
+*   HTML layout
+*   
