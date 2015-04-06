@@ -13,7 +13,7 @@
 
 ## Обработка XML
 
-* (Parsing and serializing XML)[https://developer.mozilla.org/en-US/docs/Web/Guide/Parsing_and_serializing_XML]
+* [Parsing and serializing XML](https://developer.mozilla.org/en-US/docs/Web/Guide/Parsing_and_serializing_XML)
 
 ## Обработка JSON
 
