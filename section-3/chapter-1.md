@@ -76,6 +76,11 @@ DOM и CSSOM - два интерфейса позволяющих JS коду р
 * [Labels.js: A Re-Introduction to DHTML](http://web.archive.org/web/20020602111256/http://www.youngpup.net/?request=/articles/labels.xml) by [Aaron Boodman](http://www.aaronboodman.com/) at December 23, 2001
 * [Unobtrusive DHTML, and the power of unordered lists](http://web.archive.org/web/20021204224748/http://www.kryogenix.org/code/browser/aqlists/) by Stuart Langridge at November 2002
 
+### О функционале и форме
+
+* http://bradfrost.com/blog/post/accessibility-and-low-powered-devices/
+* http://blog.chriszacharias.com/page-weight-matters
+
 ---
 
 ## Ресурсы для самостоятельного изучения
