@@ -4,6 +4,12 @@
 * Понятие ресурса.
 * Общие сведения о разработке REST API.
 
+## Описание архитектуры REST и её основных концепций
+
+* [Architectural Styles and the Design of Network-based Software Architectures][fielding]
+
+[fielding]: https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm
+
 ---
 
 Книги по REST:
