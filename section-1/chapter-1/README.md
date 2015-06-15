@@ -14,3 +14,13 @@
 * понятие всемирной паутины (англ. World Wide Web), или *веб*.
 * понятие веб-браузера.
 * Понятие веб-сервера (HTTP сервера).
+* 
+
+## Общее описание HTTP протокола
+
+* http://blog.fraixed.es/2015/04/13/clarifying-my-mistake-get-requests-with-body/
+* https://blogs.dropbox.com/developers/2015/03/limitations-of-the-get-method-in-http/
+  * https://news.ycombinator.com/item?id=9133469
+* https://lists.w3.org/Archives/Public/ietf-http-wg/2015AprJun/0262.html
+* http://dret.typepad.com/dretblog/2007/10/http-get-with-m.html
+* https://github.com/request/request/issues/1562
