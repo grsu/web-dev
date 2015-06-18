@@ -13,3 +13,7 @@
 * `try` & `catch`
 * `callback(err, ...)`
 * `Promise#catch()`
+
+## Генерация контента и понятие шаблонизатора
+
+* http://jade-lang.com/
