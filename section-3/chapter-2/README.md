@@ -17,7 +17,8 @@
 
 ## Обработка JSON
 
-* [JSON.parse() / JSON.stringify()][MDN-JSON]
+- [JSON.parse() / JSON.stringify()][MDN-JSON]
+- https://github.com/benjamine/jsondiffpatch
 
 [MDN-JSON]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON
 
