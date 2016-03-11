@@ -55,4 +55,8 @@
 
 Найдите эти инструменты и научитесь ими пользоваться.
 
+Пример:
+- https://github.com/grsu/web-dev/issues/85#issuecomment-192405633
+- https://github.com/Stelmashenko-A/Timetable/pull/8
+
 ## Вторая веха: скоро...
