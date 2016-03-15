@@ -11,6 +11,12 @@
 - упростить разработку
 - иметь возможность реализации новых требований
 
+## Designing systems for change
+
+Additional reading:
+
+- [Using Design Pattern for Micro Level Software Design](http://www.delving.in/q4.pdf)
+
 ## Проблема, цель и назначение
 
 - цель в отделении бизнес-логики (модели) от её визуализации (представления)
