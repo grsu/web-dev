@@ -1,23 +1,15 @@
-# Современные технологии разработки веб-приложений
+# Web applications development 2017
 
-Данный репозиторий предназначен для коммуникации в рамках курса "Современные технологии разработки веб-приложений".
+In Russian it is "Современные технологии разработки веб-приложений" which means
+_modern technologies for web application development_, so during this course we
+would practice in development of web applications as it is done in 2017.
 
-## Учебная программа
+## Lecture Slides
 
-[Содержание учебного материала](https://github.com/grsu/web-dev-uch-docs/blob/master/README.md)
+[Lecture slides][] are accessible to everyone from Google Drive.
 
-Учебные материалы вынесены в отдельный репозиторий. Там вы ознакомитесь с
-разделами, темами и их кратим содержанием как оно определено учебной
-программой.
-    
-В каждой теме вы найдёте примерный план для лекции и материалы для самостоятельного изучения.
+[Lecture Slides]: https://drive.google.com/folderview?id=0B3ITOCI-O3udSjhLcUNhSWc5MkE&usp=sharing
 
-## Учебник / Textbook
+## Textbook
 
 - https://github.com/grsu/web-dev-materials/tree/master/textbook
-
-## Презентации для лекций
-
-[Презентации для лекций][1]
-
-[1]: https://drive.google.com/folderview?id=0B3ITOCI-O3udSjhLcUNhSWc5MkE&usp=sharing
