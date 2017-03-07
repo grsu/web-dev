@@ -14,7 +14,7 @@
 
 ## Учебник / Textbook
 
-- https://github.com/grsu/web-dev-materials/tree/master/textbook
+- https://github.com/grsu/web-dev/tree/master/textbook
 
 ## Презентации для лекций
 
