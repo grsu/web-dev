@@ -10,3 +10,8 @@ service at the same time.
 - https://github.com/ImageMagick/ImageMagick/issues/352
 - https://github.com/ImageMagick/ImageMagick/commit/41e955984b034777903cfa61e500a0b922eb9cbd
 - https://launchpad.net/bugs/cve/CVE-2016-10062
+
+## JSON parsing errors
+
+- JSON.parse
+- fetch API, response.json
