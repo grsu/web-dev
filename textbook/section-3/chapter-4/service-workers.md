@@ -12,6 +12,10 @@
 - https://developer.mozilla.org/en-US/docs/Web/API/ExtendableEvent/waitUntil
 - https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope
 
+## Offline case for `mobile-osm` project
+
+- https://github.com/pub-t/mobile-osm/compare/service-worker
+
 ## Messaging
 
 - https://googlechrome.github.io/samples/service-worker/post-message/
