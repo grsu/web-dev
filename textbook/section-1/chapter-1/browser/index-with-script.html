@@ -1,0 +1,23 @@
+<html>
+  <body>
+    <h1>Hello World</h1>
+    <p class="assumption">Every web application starts from a static HTML file.</p>
+    <p>Scripting is the thing which makes it interactive.</p>
+    <button class="primary">Click on me!</button>
+    <script>
+      document.querySelector('.assumption').innerHTML = 'Interactive web application is here!';
+      document.querySelector('.primary').addEventListener('click', changeColor);
+
+      function changeColor(event) {
+        const style = event.target.style;
+        const foreground = style.color || 'white';
+        const background = style.backgroundColor || 'black';
+
+        event.target.innerHTML = 'Click on me again!';
+        style.backgroundColor = foreground;
+        style.color = background;
+      }
+    </script>
+  </body>
+</html>
+<!-- Open this file in browser, use `xdg-open index.html` command. -->
