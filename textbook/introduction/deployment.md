@@ -1,0 +1,2 @@
+- https://surge.sh/
+- https://zeit.co/now
