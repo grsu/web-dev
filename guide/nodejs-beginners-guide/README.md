@@ -1,3 +1,7 @@
+# Installation
+
+- https://github.com/creationix/nvm
+
 # Resources
 
 - http://nodeguide.com/beginner.html
