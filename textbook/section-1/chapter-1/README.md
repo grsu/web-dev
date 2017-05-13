@@ -29,3 +29,10 @@
 * https://lists.w3.org/Archives/Public/ietf-http-wg/2015AprJun/0262.html
 * http://dret.typepad.com/dretblog/2007/10/http-get-with-m.html
 * https://github.com/request/request/issues/1562
+
+## Additional Resources
+
+- [Journey to HTTP/2](http://kamranahmed.info/blog/2016/08/13/http-in-depth/)
+
+  In this article, author discussed what HTTP is, how it came to be, where it
+  is today and how did we get here.
